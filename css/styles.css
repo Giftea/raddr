@@ -8,6 +8,8 @@
          4.) FOOTER
     [ABOUT PAGE]-
     [SERVICES PAGE]-
+    [PORTFOLIO PAGE]-
+    [CONTACT PAGE]
          
               
 
@@ -451,4 +453,62 @@ MAIN
 .services-footer{
   margin-top: 0;
 
+}
+
+/* ======================================================================================================================
+PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOPAGE 
+==========================================================================================================================*/
+
+.portfolio-section{
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+.portfolio{
+  padding: 0;
+}
+
+.portfolio-image{
+  width: 100%;
+   height: 30rem;
+   object-fit: cover;
+}
+
+.pricing-section{
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.pricing-tab{
+  padding: 0;
+  box-shadow: 1px 1px 10px 1px var(--lightgreen);
+  text-align: center;
+  margin: 2rem ;
+
+}
+
+.pricing-head{
+  padding: 1rem;
+}
+
+.pricing-list{
+  border-top: 1px solid var(--green);
+  border-bottom: 1px solid var(--green);
+ margin: 0;
+ background-color: var(--dark);
+ padding: 1rem;
+ color: var(--white);
+}
+
+.price{
+  padding: 4rem;
+  border-bottom: 1px solid var(--green);
+  border-top: 0;
+}
+
+.pricing-footer{
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 2rem;
 }
