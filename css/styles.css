@@ -1,0 +1,445 @@
+/* 
+==================================
+    [GLOBAL STYLES]
+    [HOME PAGE]-
+         1.) NAVIGATION
+         2.) HERO
+         3.) MAIN (WITH ROWS IN BETWEEN)
+         4.) FOOTER
+    [ABOUT PAGE]-
+    [SERVICES PAGE]-
+         
+              
+
+
+
+====================================
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --dark: #000;
+  --green: rgb(43, 207, 43);
+  --lightgreen: rgba(144, 238, 144, 0.452);
+}
+
+html,
+body {
+  width: 100vw !important;
+  overflow-x: hidden;
+}
+
+
+/* =======================================================================================
+     HOMEPAGE  HOMEPAGE HOMEPAGE  HOMEPAGE  HOMEPAGE HOMEPAGE  HOMEPAGE  HOMEPAGE HOMEPAGE
+==========================================================================================*/
+
+#home {
+  font-size: 14px;
+}
+
+/* ====================
+NAVIGATION
+======================= */
+header {
+  height: 10rem;
+}
+
+#header {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+#header,
+.navbar-inverse,
+.navbar-collapse {
+  background-color: var(--white) !important;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
+  color: #9d9d9d !important;
+}
+.activeNav {
+  height: 10px;
+  width: 10px;
+  background-color:  var(--green);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@media (min-width: 768px){
+.navbar-nav > li > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+}}
+/* ====================
+HERO
+======================= */
+
+#hero {
+  height: 80vh;
+  background-color: var(--green);
+}
+
+#hero > .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.hero > .hero-text {
+  font-weight: bolder;
+  line-height: 7rem;
+  font-size: 6rem;
+}
+
+/* ====================
+MAIN
+======================= */
+
+/* first row */
+#main {
+  margin-top: 5rem;
+}
+
+.main > div {
+  display: flex;
+  justify-content: center;
+}
+.main-welcome-title {
+  margin: 3rem 0;
+  font-size: 14rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--lightgreen);
+}
+
+.main-welcome-head {
+  font-weight: bold;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--green);
+  margin: 1.6rem 0;
+}
+
+.main-welcome-text {
+  text-align: center;
+  width: 35%;
+}
+/* second row */
+.what-we-do {
+  margin-top: 6rem;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.what-we-do > div {
+  background-color: var(--lightgreen);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 4px;
+  margin: 0 1rem;
+}
+
+/* third row */
+.third-row {
+  margin: 4rem 0;
+}
+
+.third-row-title {
+  color: var(--green);
+  font-weight: bolder;
+  font-size: 3rem;
+
+  margin: 1rem 0;
+}
+
+.btn {
+  background-color: var(--green);
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--dark);
+  font-family: Arial;
+  font-size: 17px;
+  padding: 14px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  margin: 1rem 0;
+}
+.btn:hover {
+  background-color: var(--lightgreen);
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+/* fourth row */
+.quotes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 6rem 0;
+}
+.quotes > div {
+  display: flex;
+  justify-content: center;
+}
+
+.quotes-title {
+  margin: 4rem 0;
+  font-size: 14rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--lightgreen);
+}
+
+.quote-text {
+  background-color: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 9rem 8rem;
+  border-radius: 5px;
+  width: 45%;
+  margin-top: 3rem;
+}
+
+/* fifth row */
+
+.reviews-section{
+  background-color: var(--lightgreen);
+  padding-bottom: 4rem ;
+}
+
+.reviews {
+  margin: 10rem 0;
+
+}
+
+.reviews > div {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews-title {
+  margin: 3rem 0;
+  font-size: 14rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--lightgreen);
+}
+.reviews-head {
+  font-weight: bold;
+  text-align: center;
+  font-size: 4rem;
+  color: var(--green);
+  margin: 1.6rem 0;
+}
+
+.reviews-text {
+  text-align: center;
+  width: 35%;
+}
+.user-reviews {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+.user-reviews > div {
+  border: 2px solid var(--green);
+  padding: 4rem;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+  text-align: center;
+}
+
+/*
+=============================
+ FOOTER
+============================= */
+footer{
+    margin-top: 16rem;
+}
+
+.footer {
+  background-color: var(--lightgreen);
+  padding: 3rem 15rem;
+}
+
+.footer > .row{
+    display: flex;
+    justify-content: space-around ;
+    padding: 2rem 0;
+}
+
+.footer-title{
+    color: var(--green);
+    margin-bottom: 1.5rem;
+}
+
+.footer-text{
+    color: var(--dark);
+}
+
+.footer-btn{
+    display: flex;
+    align-items: flex-end;
+}
+
+.bottom-footer{
+    background-color: var(--green);
+    padding: 5rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =======================================================================================
+    ABOUTPAGE ABOUTPAGEABOUTPAGE ABOUTPAGE ABOUTPAGEABOUTPAGE ABOUTPAGE ABOUTPAGEABOUTPAGE
+==========================================================================================*/
+
+/* ====================
+HERO
+======================= */
+
+#about-hero {
+  height: 80vh;
+  background-color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+ .about-hero-text {
+  font-weight: bolder;
+  line-height: 7rem;
+  font-size: 6rem;
+  text-align: center;
+}
+
+/* ====================
+MAIN
+======================= */
+.title{
+  color: var(--green);
+  text-align: center;
+}
+
+.mission-text{
+  margin: 4rem 0;
+}
+
+.objectives-title{
+  margin-top: 6rem ;
+}
+
+.objectives{
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.objectives > div> p {
+  padding: 2.4rem;
+}
+
+.story{
+  background-color: rgba(144, 238, 144, 0.164);
+  padding: 3rem 0;
+}
+.story-row{
+  margin: 4rem 0;
+}
+.team-section{
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+
+.team-member{
+padding: 0;
+}
+
+.team-member-image{
+  width: 100%;
+   height: 25rem;
+   object-fit: cover;
+   border-top-left-radius: 28px;
+   border-top-right-radius: 28px;
+}
+
+.team-member-details{
+background-color: var(--green);
+border-bottom-left-radius: 7px;
+border-bottom-right-radius: 7px;
+text-align: center;
+padding: 3rem;
+}
+
+
+
+/* ======================================================================================================================
+    SERVICESPAGE SERVICESPAGE SERVICESPAGE SERVICESPAGE SERVICESPAGE SERVICESPAGE SERVICESPAGE SERVICESPAGE SERVICESPAGE
+==========================================================================================================================*/
+
+/* ====================
+HERO
+======================= */
+
+#services-hero {
+  height: 80vh;
+  background-color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .services-hero-text {
+  font-weight: bolder;
+  line-height: 7rem;
+  font-size: 6rem;
+  text-align: center;
+}
+
+/* ====================
+MAIN
+======================= */
+
+#services-main{
+  background-color: var(--lightgreen);
+
+}
+
+.curved-div-left{
+  background-color: var(--white);
+  padding: 20rem;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.curved-div-right{
+  background-color: var(--white);
+  padding: 20rem;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
