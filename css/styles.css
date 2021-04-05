@@ -443,3 +443,12 @@ MAIN
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
 }
+
+.services-text{
+  padding: 10rem;
+}
+
+.services-footer{
+  margin-top: 0;
+
+}
