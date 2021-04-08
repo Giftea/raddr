@@ -55,7 +55,7 @@
           >
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown mm-menu home">
-                <a class="page-scroll home" href="index.html">Home <span class="activeNav home-dot"></span></a>
+                <a class="page-scroll home activeMenu" href="index.html">Home <span class="activeNav home-dot"></span></a>
               </li>
               <li class="dropdown mm-menu about">
                 <a class="page-scroll" href="about.html">About <span class=" about-dot"></span></a>
@@ -83,10 +83,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5 hero">
+            <h3 class="sub-hero">WE HELP YOU</h3>
             <h1 class="hero-text">
               Lorem, ipsum dolor sit amet consectetur adipisicing.
             </h1>
           </div>
+        <div class=""><img src="./Assets/Images/index/hero.png" class="img-fluid mx-auto d-block hero-img" /></div>
         </div>
       </div>
     </div>
@@ -111,24 +113,24 @@
         <!-- SECOND ROW -->
         <div class="row what-we-do">
           <div class="col-md-4">
-            <img />
-            <p>we create</p>
+            <img src="./Assets/Images/index/bulb.png" class="d-block img-fluid mx-auto what-we-do_img" />
+            <h4 class="what-we-do_title">we create</h4>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
               vitae quia ea mollitia maxime.
             </p>
           </div>
           <div class="col-md-4">
-            <img />
-            <p>we create</p>
+            <img src="./Assets/Images/index/code.png" class="d-block img-fluid mx-auto what-we-do_img" />
+            <h4 class="what-we-do_title">we create</h4>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
               vitae quia ea mollitia maxime.
             </p>
           </div>
           <div class="col-md-4">
-            <img />
-            <p>we create</p>
+            <img src="./Assets/Images/index/cloud.png" class="d-block img-fluid mx-auto what-we-do_img" />
+            <h4 class="what-we-do_title">we create</h4>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
               vitae quia ea mollitia maxime.
@@ -139,23 +141,23 @@
         <!-- THIRD ROW -->
         <div class="row third-row">
           <div class="container">
-            <div class="col-md-4">
+            <div class="col-md-6">
               <h3 class="row third-row-title">TECH AFFICIONADO & ENTHUSIAST</h3>
-              <p>
+              <p class="row third-row-text">
                 We are at the core of the technology & information revolution in
                 global visibility, branding and marketing.
               </p>
-              <p>
+              <p class="row third-row-text">
                 We understand it, appreciate it and can transform any individual
                 or enterprise over night, by harnessing on it's power to produce
                 results. Checkout some of our launched products
               </p>
               <button class="btn">Our Products</button>
             </div>
-            <div class="col-md-8 image-group">
-              <img src="./Assets/Images/profile.jpeg" class="home-image" />
-              <img src="./Assets/Images/profile.jpeg" class="home-image float-img"/>
-              <img src="./Assets/Images/profile.jpeg" class="home-image" />
+            <div class="col-md-6 image-group">
+              <img src="./Assets/Images/index/user-1.png" class="home-image" />
+              <img src="./Assets/Images/index/user-2.png" class="home-image float-img"/>
+              <img src="./Assets/Images/index/user-3.png" class="home-image" />
   
             </div>
           </div>
@@ -166,14 +168,19 @@
           <div class="quote-section">
             <div class="callout quote EN quote-text">
               Lorem ipsum, dolor sit amet consectetur
-               adipisicing elit. Id quod voluptates aut
-                doloribus veniam, enim 
-              cumque earum animi officia omnis deserunt magnam
+               adipisicing elit. Id quod voluptates
                suscipit cum nostrum. Molestiae reiciendis laudantium rerum voluptas.
              </div>
+             <div>
+              <img src="./Assets/Images/index/review-2.png" class="img-fluid quotes-img" />
+             </div>
+             <small>Ryan Black</small>
+             <progress value="5000" max="10000">50%</progress>
           </div>
+          <img src="./Assets/Images/index/dots.png" class="img-fluid dots" />
+         
         </div>
-      
+        <div class="space100"></div>
         <!-- fifth row -->
         <div class="reviews-section">
               <div class="row reviews">
@@ -187,14 +194,59 @@
             </div>
             <div class="row ">
               <div class="quote3 user-reviews">
-                <div class="col-md-3 user-review callout big-quote DE ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore cum minima esse id.</div>
-                <div class="col-md-3 user-review callout big-quote DE ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore cum minima esse id.</div>
-                <div class="col-md-3 user-review callout big-quote DE ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore cum minima esse id.</div>          
-                <div class="col-md-3 user-review callout big-quote DE ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore cum minima esse id.</div>
+                <div class="col-md-3 user-review callout big-quote DE ">
+                  <div class="review-img_container">
+                    <img src="./Assets/Images/index/review-1.png" class="img-fluid review-img" />
+                  </div>
+                  <h5 class="user-review-name">Lorem Ipsum</h5>
+                  <p>Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit.
+                    Labore cum minima esse id.</p>
+                </div>
+                <div class="col-md-3 user-review callout big-quote DE ">
+                  <div class="review-img_container">
+                    <img src="./Assets/Images/index/review-2.png" class="img-fluid review-img" />
+                  </div>
+                  <h5 class="user-review-name">Lorem Ipsum</h5>
+                  <p>Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit.
+                    Labore cum minima esse id.</p>
+                </div>
+                <div class="col-md-3 user-review callout big-quote DE ">
+                  <div class="review-img_container">
+                    <img src="./Assets/Images/index/review-3.png" class="img-fluid review-img" />
+                  </div>
+                  <h5 class="user-review-name">Lorem Ipsum</h5>
+                    <p>Lorem ipsum dolor, sit amet
+                      consectetur adipisicing elit.
+                      Labore cum minima esse id.</p>
+                </div>
+                <div class="col-md-3 user-review callout big-quote DE ">
+                  <div class="review-img_container">  <img src="./Assets/Images/index/review-2.png" class="img-fluid review-img" /></div>
+                  <h5 class="user-review-name">Lorem Ipsum</h5>
+                      <p>Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. YOU
+                        Labore cum minima esse id.</p>
+                </div>
               </div>
           </div>
           <div class="space100"></div>
         </div>
+        <div>
+          <div class="container">
+            <!-- OUR CLIENTS -->
+            <div class="row main">
+                <div><h1 class="main-welcome-title">Our Clients</h1></div>
+              </div>
+          </div> 
+          </div>
+          <div>
+            <img src="./Assets/Images/index/partner-1.png" class="partner-logo" />
+            <img src="./Assets/Images/index/partner-3.png" class="partner-logo"  />
+            <img src="./Assets/Images/index/partner-2.png" class="partner-logo"  />
+
+
+          </div>
     
     <!-- MAIN ENDS -->
 
@@ -213,7 +265,7 @@
             <div><h3>LOGO</h3></div>
             <div><h3>Icons</h3></div>
             <div><h3>LOGO</h3></div>
-            <div><h3>Icons</h3></div>
+            <div><p>2021 Raddr Technologies. All Rights Reserved</p></div>
         </div>
     </footer>
 
