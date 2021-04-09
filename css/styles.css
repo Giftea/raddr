@@ -1032,16 +1032,16 @@ MAIN
 .curved-div-left {
   background-color: var(--white);
   padding: 4rem;
-  height: 40rem;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
+  height: 50rem;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
 }
 .curved-div-right {
   background-color: var(--white);
   padding: 4rem;
-  height: 40rem;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
+  height: 50rem;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
 }
 
 .service-image {
@@ -1056,7 +1056,7 @@ MAIN
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  height: 40rem;
+  height: 50rem;
   padding: 4.5rem;
   line-height: 3rem;
 }
@@ -1169,13 +1169,14 @@ PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOP
 
 .pricing-tab {
   padding: 0;
-  box-shadow: 1px 1px 10px 1px var(--tetiary);
+  box-shadow: 0px -5px 10px #E1FED2;
+  border: 2px solid var(--shade2);
   text-align: center;
   margin: 2rem;
 }
 
 .pricing-head {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .pricing-list {
@@ -1199,6 +1200,16 @@ PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOP
   padding: 2rem;
 }
 
+@media screen and (max-width: 1000px) {
+  .pricing-section {
+    align-items: center;
+    flex-direction: column;
+  }
+  .pricing-tab{
+    width: 60%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .portfolio-section {
     flex-direction: column;
@@ -1207,7 +1218,92 @@ PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOPAGE PORTFOLIOP
     margin: 1.5rem;
   }
 
-  .pricing-section {
-    flex-direction: column;
-  }
+.portfolio-image {
+
+  height: 35rem;
+
+}
+
+
+}
+@media screen and (max-width: 600px) {
+
+.portfolio-image {
+
+  height: 30rem;
+
+}
+.pricing-tab{
+  width: 80%;
+}
+}
+
+/* ======================================================================================================================
+CONTACTSPAGE CONTACTSPAGE CONTACTSPAGE CONTACTSPAGE CONTACTSPAGE CONTACTSPAGE CONTACTSPAGE CONTACTSPAGE 
+==========================================================================================================================*/
+
+.contacts{
+  margin: 5rem auto;
+}
+.contacts-title{
+  color: var(--primary);
+  text-transform: uppercase;
+}
+.contacts-image{
+  display: block;
+  height: 40rem;
+  width: 100%;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+.form-container{
+  background-color: var(--tetiary);
+  padding: 4rem;
+}
+
+.names{
+  display: flex;
+  justify-content: space-between;
+}
+
+.names > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.names > div > small, .email > small{
+  font-style: italic;
+}
+
+.email{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-services{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.form-services > div {
+  display: flex;
+}
+
+.checkbox{
+  display: inline-grid;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.25em;
+  border: 0.1em solid currentColor;
+}
+
+.budget{
+  background-color: var(--white);
+  padding: 2rem;
+}
+
+.budget > div > small{
+  font-style: italic;
 }
